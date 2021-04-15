@@ -358,13 +358,35 @@ body.no-scroll {
 
 .btn-enter {
   margin-left: 10px;
+  font-size: 16px;
+  font-weight: 700;
   background: #ff5454;
+  color: #fff;
+  border: 1px solid #fff;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+.btn-enter:hover {
+  color: #000;
 }
 
 .btn-create {
   margin-top: 10px;
   font-size: 16px;
   display: none;
+  font-weight: 700;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 6px 2px 0.5px #fff;
+          box-shadow: 0px 6px 2px 0.5px #fff;
+}
+
+.btn-create:focus {
+  -webkit-box-shadow: 0px 2px 2px 0.5px #fff;
+          box-shadow: 0px 2px 2px 0.5px #fff;
+  -webkit-transform: translateY(4px);
+      -ms-transform: translateY(4px);
+          transform: translateY(4px);
 }
 
 .btn-create-show {
@@ -681,14 +703,14 @@ textarea:focus {
 .tooltip-email {
   position: absolute;
   color: red;
-  top: 140px;
+  top: 135px;
   left: 35px;
 }
 
 .tooltip-password {
   position: absolute;
   color: red;
-  top: 205px;
+  top: 195px;
   left: 35px;
 }
 
@@ -1049,7 +1071,7 @@ textarea._info {
 
 .footer-content {
   max-width: 100%;
-  padding: 12px 50px 0px 50px;
+  padding: 12px 50px 5px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1073,6 +1095,7 @@ textarea._info {
 
 .footer-head {
   font-size: 18px;
+  line-height: 24px;
   color: #d7d7d7;
 }
 
@@ -1084,11 +1107,11 @@ textarea._info {
 
 .footer-rights-declaration {
   border-top: 1px solid #d7d7d7;
-  padding-top: 4px;
+  padding: 15px 0 10px;
   margin: 4px 10px 7px 10px;
   color: #777777;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 @font-face {
@@ -1697,7 +1720,7 @@ textarea._info {
   .btn-create {
     font-size: 14px;
   }
-  img {
+  .header_logo-img img {
     width: 80px;
   }
   .cards_filter {
@@ -1705,8 +1728,9 @@ textarea._info {
     grid-template-columns: 1fr 1fr;
     gap: 5px;
   }
-  .filter-select {
-    height: 40px;
+  .filter-select,
+  .find-card-text {
+    height: 30px;
   }
   .btn-search {
     width: 100%;
